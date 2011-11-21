@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "virtual", "virtual\virtual.vcproj", "{AF57450A-8A8E-48A7-AEF6-BA0D3ADF8B32}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "passing", "passing\passing.vcproj", "{30EB30C9-82C1-4E59-9371-6277E351A2F4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pointers", "pointers\pointers.vcproj", "{1F1829B2-3192-4CFC-BBAD-3710D78547FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF57450A-8A8E-48A7-AEF6-BA0D3ADF8B32}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AF57450A-8A8E-48A7-AEF6-BA0D3ADF8B32}.Debug|Win32.Build.0 = Debug|Win32
+		{AF57450A-8A8E-48A7-AEF6-BA0D3ADF8B32}.Release|Win32.ActiveCfg = Release|Win32
+		{AF57450A-8A8E-48A7-AEF6-BA0D3ADF8B32}.Release|Win32.Build.0 = Release|Win32
+		{30EB30C9-82C1-4E59-9371-6277E351A2F4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{30EB30C9-82C1-4E59-9371-6277E351A2F4}.Debug|Win32.Build.0 = Debug|Win32
+		{30EB30C9-82C1-4E59-9371-6277E351A2F4}.Release|Win32.ActiveCfg = Release|Win32
+		{30EB30C9-82C1-4E59-9371-6277E351A2F4}.Release|Win32.Build.0 = Release|Win32
+		{1F1829B2-3192-4CFC-BBAD-3710D78547FA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1F1829B2-3192-4CFC-BBAD-3710D78547FA}.Debug|Win32.Build.0 = Debug|Win32
+		{1F1829B2-3192-4CFC-BBAD-3710D78547FA}.Release|Win32.ActiveCfg = Release|Win32
+		{1F1829B2-3192-4CFC-BBAD-3710D78547FA}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
