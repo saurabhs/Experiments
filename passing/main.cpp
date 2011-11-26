@@ -20,7 +20,7 @@ void GetVars(int &v1, int &v2)
 
 void Display(int v1, int v2)
 {
-	cout<<"var1 : "<<v1<<", var2 : "<<v2;
+	printf("var1 : %i, var2 : %i", v1, v2);
 }
 
 void main()

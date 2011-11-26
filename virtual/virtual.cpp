@@ -1,40 +1,35 @@
 #include "virtual.h"
 
+//Child
+
 Child::Child()
 {
-	var1 = 20;
-	var2 = 40;
+	cout<<"\nConstructor Child";
 }
 
 void Child::Init()
 {
-	var1 = 40;
-	var2 = 20;
+	cout<<"\nInitializing Child";
 }
 
 void Child::Update()
 {
-	var1++;
-	var2++;
-
-	cout<<"\nvar1 : "<<var1<<", var2 : "<<var2;
+	cout<<"\nUpdating Child";
 }
+
+//Child2
 
 Child2::Child2()
 {
-
+	cout<<"\nConstructor Child2";
 }
 
 void Child2::Init()
 {
-	var1 = 50.0f;
-	var2 = 150.0f;
+	cout<<"\nInitializing Child2";
 }
 
 void Child2::Update()
 {
-	var1--;
-	var2--;
-
-	cout<<"\nvar1 : "<<var1<<", var2 : "<<var2;
+	cout<<"\nUpdating Child2";
 }
