@@ -5,6 +5,7 @@
 void main()
 {
 	//Parent* parent = new Parent();
+
 	Child* child = new Child();
 	Child* child_2 = new Child();
 	Child* child_3 = new Child();
@@ -15,9 +16,6 @@ void main()
 
 	map<int, Parent*> parentList;
 	list<Parent*> parentList2;
-
-	//parent->Update();
-	//child->Update();
 
 	cout<<"\n\nMAP";
 	//map
@@ -30,7 +28,6 @@ void main()
 	parentList[++i] = child2_2;
 	parentList[++i] = child2_3; 
 
-	//while(true)
 	for(int j = 0; j <= i; j++)
 		parentList[j]->Update();
 
@@ -46,6 +43,18 @@ void main()
 
 	for(list<Parent*>::iterator iter = parentList2.begin(); iter != parentList2.end(); iter++)
 		(*iter)->Update();
+
+	//ARRAY
+	Parent* parent[2];
+	for(int i = 0; i < 2; i++)
+		parent[i] = new Parent();
+
+	parent[0] = child;
+	parent[1] = child2;
+
+	cout<<"\n\nARRAY";
+	for(int i = 0; i < 2; i++)
+		parent[i]->Update();
 
 	_getch();
 }

@@ -9,8 +9,8 @@ class Parent
 public:
 					Parent() { /* */ }
 
-	virtual void	Init() = 0;
-	virtual void	Update() = 0;
+	virtual void	Init() { }
+	virtual void	Update() { }
 };
 
 class Child : public Parent
@@ -22,11 +22,10 @@ public:
 	virtual void	Update();
 };
 
-class Child2 : public Child
+class Child2 : public Parent
 {
 public:
 			Child2();
-			~Child2();
 	
 	void	Init();
 	void	Update();
