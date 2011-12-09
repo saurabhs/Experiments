@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "passing", "passing\passing.
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pointers", "pointers\pointers.vcproj", "{1F1829B2-3192-4CFC-BBAD-3710D78547FA}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bitwise", "bitwise\bitwise.vcproj", "{BC844919-AD7E-4BD6-8975-DA4371F1DBC6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -25,6 +27,10 @@ Global
 		{1F1829B2-3192-4CFC-BBAD-3710D78547FA}.Debug|Win32.Build.0 = Debug|Win32
 		{1F1829B2-3192-4CFC-BBAD-3710D78547FA}.Release|Win32.ActiveCfg = Release|Win32
 		{1F1829B2-3192-4CFC-BBAD-3710D78547FA}.Release|Win32.Build.0 = Release|Win32
+		{BC844919-AD7E-4BD6-8975-DA4371F1DBC6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BC844919-AD7E-4BD6-8975-DA4371F1DBC6}.Debug|Win32.Build.0 = Debug|Win32
+		{BC844919-AD7E-4BD6-8975-DA4371F1DBC6}.Release|Win32.ActiveCfg = Release|Win32
+		{BC844919-AD7E-4BD6-8975-DA4371F1DBC6}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
