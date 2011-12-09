@@ -244,8 +244,8 @@ class mag{
 public:	
 	mag(float r, float i) : real(r), imag(i){}
 
-	float getMag(){ return CalcMag(); }
-	operator float(){ return CalcMag(); }
+	float getMag() { return CalcMag(); }
+	operator float() { return CalcMag(); }
 
 private:
 	float CalcMag(){ return sqrt((real * real) + (imag * imag)); }
@@ -286,7 +286,7 @@ void main(){
 
 	//memory();
 
-	//mag m(3.0f, 4.0f);
+	mag _msg(3.0f, 4.0f);
 
 	int  a[5] = { 0, 1, 2, 3, 4 };
 	int  i, j, m ;
