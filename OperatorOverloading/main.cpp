@@ -20,7 +20,27 @@ struct Vector2
 		x = xx;
 		y = yy;
 	}
+	
+	Vector2 operator+(int value)
+	{
+		Vector2 temp;
 
+		temp.x = this->x + value;
+		temp.y = this->y + value;
+
+		return temp;
+	}
+
+	Vector2 operator+(Vector2 value)
+	{
+		Vector2 temp;
+
+		temp.x = this->x + value.x;
+		temp.y = this->y + value.y;
+
+		return temp;
+	}
+	
 	Vector2 operator*(int value)
 	{
 		Vector2 temp;
@@ -30,7 +50,7 @@ struct Vector2
 
 		return temp;
 	}
-	
+
 	Vector2 operator*(Vector2 value)
 	{
 		Vector2 temp;
@@ -41,14 +61,41 @@ struct Vector2
 		return temp;
 	}
 
-	Vector2 operator+(int value)
+	Vector2 operator+=(int value)
 	{
-		Vector2 temp;
+		this->x += value;
+		this->y += value;
 
-		temp.x = this->x + value;
-		temp.y = this->y + value;
+		return *this;
+	}
 
-		return temp;
+	Vector2 operator+=(Vector2 value)
+	{
+		this->x += value.x;
+		this->y += value.y;
+
+		return *this;
+	}
+
+	Vector2 operator*=(int value)
+	{
+		this->x *= value;
+		this->y *= value;
+
+		return *this;
+	}
+
+	Vector2 operator*=(Vector2 value)
+	{
+		this->x *= value.x;
+		this->y *= value.y;
+
+		return *this;
+	}
+
+	void get()
+	{
+		cout<<"\n("<<this->x<<", "<<this->y<<")";
 	}
 };
 
@@ -58,13 +105,24 @@ void main()
 	Vector2 vec2(12, 6);
 	
 	vec = vec * 2;
-	cout<<"x : "<<vec.x<<", y : "<<vec.y;
+	cout<<"vec = vec * 2";
+	vec.get();
 
 	Vector2 vec4 = vec * vec2;
-	cout<<"\n\nx : "<<vec4.x<<", y : "<<vec4.y;
+	cout<<"\n\nvec4 = vec * vec2";
+	vec4.get();
 
 	vec4 = vec4 + 3;
-	cout<<"\n\nx : "<<vec4.x<<", y : "<<vec4.y;
+	cout<<"\n\nvec4 = vec4 + 3";
+	vec4.get();
+
+	vec4 += vec;
+	cout<<"\n\nvec4 += vec";
+	vec4.get();
+
+	vec4 *= 3;
+	cout<<"\n\nvec4 *= 3";
+	vec4.get();
 
 	_getch();
 }
